@@ -92,9 +92,12 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       h="full"
       {...rest}>
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="20px" fontFamily="heading" fontWeight="bold">
+        {/* <Text fontSize="20px" fontFamily="heading" fontWeight="bold">
           Yukon Dashboard <br/>
-        </Text>
+        </Text> */}
+        <Box boxSize=''>
+          <Image src='https://cdn.discordapp.com/attachments/715350234762313843/1062342690295009340/yukonlogoy.png' alt='Dan Abramov' />
+        </Box>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
