@@ -23,13 +23,20 @@ import {
   FiSettings,
   FiMenu,
 } from 'react-icons/fi';
+
 import { IconType } from 'react-icons';
 import { ReactText } from 'react';
-import { TfiAgenda } from "react-icons/tfi";
+import { TfiAgenda, TfiAnnouncement } from "react-icons/tfi";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 import { SiGooglemeet } from "react-icons/si";
-import { Image } from '@chakra-ui/react';
+import { TiContacts } from "react-icons/ti";
+import { RiBubbleChartFill } from "react-icons/ri"
+import { HiBuildingOffice2 } from "react-icons/hi2";
+import { BsBoundingBox } from "react-icons/bs";
+import { GrUserWorker } from "react-icons/gr";
 
+
+import { Image } from '@chakra-ui/react';
 interface LinkItemProps {
   name: string;
   icon: IconType;
@@ -39,12 +46,12 @@ const LinkItems: Array<LinkItemProps> = [
   { name: 'Agendas', icon: TfiAgenda },
   { name: 'Assembleias', icon: SiGooglemeet },
   { name: 'Boletos', icon: FaRegMoneyBillAlt },
-  { name: 'Comunicados', icon: FiStar },
-  { name: 'Contatos', icon: FiSettings },
-  { name: 'Demonstrações Financeiras', icon: FiSettings },
-  { name: 'Moradores', icon: FiSettings },
-  { name: 'Estoque', icon: FiSettings },
-  { name: 'Funcionários', icon: FiSettings },
+  { name: 'Comunicados', icon: TfiAnnouncement },
+  { name: 'Contatos', icon: TiContacts },
+  { name: 'Demonstrações Financeiras', icon: RiBubbleChartFill },
+  { name: 'Moradores', icon: HiBuildingOffice2 },
+  { name: 'Estoque', icon: BsBoundingBox },
+  { name: 'Funcionários', icon: GrUserWorker },
   { name: 'Reservas', icon: FiSettings },
   { name: 'Ordens de Serviço', icon: FiSettings },
   { name: 'Solicitações', icon: FiSettings },
