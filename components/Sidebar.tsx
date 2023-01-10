@@ -34,7 +34,9 @@ import { RiBubbleChartFill } from "react-icons/ri"
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import { BsBoundingBox } from "react-icons/bs";
 import { GrUserWorker } from "react-icons/gr";
-
+import { MdSchedule } from "react-icons/md";
+import { CgReorder } from "react-icons/cg";
+import { VscChecklist, VscArchive } from "react-icons/vsc";
 
 import { Image } from '@chakra-ui/react';
 interface LinkItemProps {
@@ -50,11 +52,11 @@ const LinkItems: Array<LinkItemProps> = [
   { name: 'Contatos', icon: TiContacts },
   { name: 'Demonstrações Financeiras', icon: RiBubbleChartFill },
   { name: 'Moradores', icon: HiBuildingOffice2 },
-  { name: 'Estoque', icon: BsBoundingBox },
+  { name: 'Estoque', icon: VscArchive },
   { name: 'Funcionários', icon: GrUserWorker },
-  { name: 'Reservas', icon: FiSettings },
-  { name: 'Ordens de Serviço', icon: FiSettings },
-  { name: 'Solicitações', icon: FiSettings },
+  { name: 'Reservas', icon: MdSchedule },
+  { name: 'Ordens de Serviço', icon: CgReorder },
+  { name: 'Solicitações', icon: VscChecklist },
 ];
 
 export default function SimpleSidebar({ children }: { children: ReactNode }) {
