@@ -25,7 +25,9 @@ import {
 } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import { ReactText } from 'react';
-
+import { TfiAgenda } from "react-icons/tfi";
+import { FaRegMoneyBillAlt } from "react-icons/fa";
+import { SiGooglemeet } from "react-icons/si";
 import { Image } from '@chakra-ui/react';
 
 interface LinkItemProps {
@@ -34,9 +36,9 @@ interface LinkItemProps {
 }
 
 const LinkItems: Array<LinkItemProps> = [
-  { name: 'Agendas', icon: FiHome },
-  { name: 'Assembleias', icon: FiTrendingUp },
-  { name: 'Boletos', icon: FiCompass },
+  { name: 'Agendas', icon: TfiAgenda },
+  { name: 'Assembleias', icon: SiGooglemeet },
+  { name: 'Boletos', icon: FaRegMoneyBillAlt },
   { name: 'Comunicados', icon: FiStar },
   { name: 'Contatos', icon: FiSettings },
   { name: 'Demonstrações Financeiras', icon: FiSettings },
