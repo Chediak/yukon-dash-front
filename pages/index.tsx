@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import Layout from "../components/layouts/Layout";
 import BreadCrumb from "../components/BreadCrumb";
+import CardDash from "../components/CardDash";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,19 +61,5 @@ export default function Home() {
         </Layout>
       </Sidebar>
     </>
-  );
-}
-
-export function CardDash({ children, justifyContent = "center" }: any) {
-  return (
-    <Flex
-      p={2}
-      rounded="md"
-      border="1px solid #fafafa"
-      bg={useColorModeValue("gray.100", "gray.900")}
-      justifyContent={justifyContent}
-    >
-      {children}
-    </Flex>
   );
 }

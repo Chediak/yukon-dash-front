@@ -7,7 +7,6 @@ import {
   Flex,
   Icon,
   useColorModeValue,
-  Link,
   Drawer,
   DrawerContent,
   Text,
@@ -39,9 +38,12 @@ import { CgReorder } from "react-icons/cg";
 import { VscChecklist, VscArchive } from "react-icons/vsc";
 
 import { Image } from "@chakra-ui/react";
+import Link from "next/link";
+import { URL, Url } from "url";
 interface LinkItemProps {
   name: string;
   icon: IconType;
+  href?: any;
 }
 
 const LinkItems: Array<LinkItemProps> = [
@@ -51,7 +53,7 @@ const LinkItems: Array<LinkItemProps> = [
   { name: "Comunicados", icon: TfiAnnouncement },
   { name: "Contatos", icon: TiContacts },
   { name: "Demonstrações Financeiras", icon: RiBubbleChartFill },
-  { name: "Moradores", icon: HiBuildingOffice2 },
+  { name: "Moradores", icon: HiBuildingOffice2, href: "/resident" },
   { name: "Estoque", icon: VscArchive },
   { name: "Funcionários", icon: GrUserWorker },
   { name: "Reservas", icon: MdSchedule },
@@ -117,7 +119,12 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
-        <NavItem fontSize="11px" key={link.name} icon={link.icon}>
+        <NavItem
+          fontSize="11px"
+          key={link.name}
+          icon={link.icon}
+          href={link.href}
+        >
           {link.name}
         </NavItem>
       ))}
@@ -128,14 +135,11 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
 interface NavItemProps extends FlexProps {
   icon: IconType;
   children: ReactText;
+  href: Url;
 }
-const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
+const NavItem = ({ icon, href, children, ...rest }: NavItemProps) => {
   return (
-    <Link
-      href="#"
-      style={{ textDecoration: "none" }}
-      _focus={{ boxShadow: "none" }}
-    >
+    <Link href={href ? href : "/"} style={{ textDecoration: "none" }}>
       <Flex
         align="center"
         p="4"
@@ -152,7 +156,7 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
         {icon && (
           <Icon
             mr="4"
-            fontSize="16"
+            fontSize="18"
             _groupHover={{
               color: "white",
             }}
