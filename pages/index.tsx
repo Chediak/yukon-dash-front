@@ -9,6 +9,7 @@ import {
   SimpleGrid,
   Text,
   useColorModeValue,
+  Flex,
 } from "@chakra-ui/react";
 import Layout from "../components/layouts/Layout";
 import BreadCrumb from "../components/BreadCrumb";
@@ -26,19 +27,34 @@ export default function Home() {
       <Sidebar>
         <Layout>
           <Stack>
-            <CardDash>
+            {/*breadcrumb*/}
+            <CardDash justifyContent="start">
               <BreadCrumb items={links} />
             </CardDash>
+            {/*breadcrumb*/}
+
             <SimpleGrid h="150px" columns={[1, 2, 2, 4]} gap={2}>
-              <CardDash>Saldo</CardDash>
-              <CardDash>teste</CardDash>
-              <CardDash>teste</CardDash>
-              <CardDash>teste</CardDash>
+              <CardDash>
+                <Text my="auto">Saldo</Text>
+              </CardDash>
+              <CardDash>
+                <Text my="auto">Teste</Text>
+              </CardDash>
+              <CardDash>
+                <Text my="auto">Teste</Text>
+              </CardDash>
+              <CardDash>
+                <Text my="auto">Teste</Text>
+              </CardDash>
             </SimpleGrid>
 
             <SimpleGrid h="150px" columns={[1, 2]} gap={2}>
-              <CardDash>teste</CardDash>
-              <CardDash>teste</CardDash>
+              <CardDash>
+                <Text my="auto">Teste</Text>
+              </CardDash>
+              <CardDash>
+                <Text my="auto">Teste</Text>
+              </CardDash>
             </SimpleGrid>
           </Stack>
         </Layout>
@@ -47,15 +63,16 @@ export default function Home() {
   );
 }
 
-export function CardDash({ children }: any) {
+export function CardDash({ children, justifyContent = "center" }: any) {
   return (
-    <Box
+    <Flex
       p={2}
       rounded="md"
       border="1px solid #fafafa"
       bg={useColorModeValue("gray.100", "gray.900")}
+      justifyContent={justifyContent}
     >
       {children}
-    </Box>
+    </Flex>
   );
 }
