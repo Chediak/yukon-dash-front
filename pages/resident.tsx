@@ -17,11 +17,12 @@ import ReactPaginate from "react-paginate";
 import BreadCrumb from "../components/BreadCrumb";
 import CardDash from "../components/CardDash";
 import Layout from "../components/layouts/Layout";
+import SearchBar from "../components/SearchBar";
 import SimpleSidebar from "../components/Sidebar";
 
 const links = [
   { title: "Início", link: "/" },
-  { title: "Dashboard", link: "/dashboard" },
+  { title: "Moradores", link: "/resident" },
 ];
 
 const residents = [
@@ -41,15 +42,15 @@ export default function Resident() {
       <Layout>
         <Stack>
           {/*breadcrumb*/}
-          <CardDash justifyContent="start">
-            <BreadCrumb items={links} />
-          </CardDash>
+          <BreadCrumb items={links} />
           {/*breadcrumb*/}
 
           <CardDash justifyContent="start">
-            <Box>
-              <Text fontSize="xl">Residentes</Text>
-            </Box>
+            <Text fontSize="xl">Residentes</Text>
+          </CardDash>
+
+          <CardDash justifyContent="start">
+            <SearchBar />
           </CardDash>
           <CardDash justifyContent="space-between">
             <TableContainer w="100%">

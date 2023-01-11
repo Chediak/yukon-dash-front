@@ -29,9 +29,7 @@ export default function Home() {
         <Layout>
           <Stack>
             {/*breadcrumb*/}
-            <CardDash justifyContent="start">
-              <BreadCrumb items={links} />
-            </CardDash>
+            <BreadCrumb items={links} />
             {/*breadcrumb*/}
 
             <SimpleGrid h="150px" columns={[1, 2, 2, 4]} gap={2}>
