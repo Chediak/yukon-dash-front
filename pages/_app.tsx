@@ -5,6 +5,8 @@ import { Component } from "react";
 import Sidebar from "../components/Sidebar";
 import theme from "../lib/theme";
 
+import "../styles/globals.css";
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>

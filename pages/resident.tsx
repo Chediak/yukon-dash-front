@@ -12,6 +12,8 @@ import {
   Thead,
   Tr,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import ReactPaginate from "react-paginate";
 import BreadCrumb from "../components/BreadCrumb";
 import CardDash from "../components/CardDash";
 import Layout from "../components/layouts/Layout";
@@ -26,11 +28,11 @@ const residents = [
   { name: "Edgar", apartment: "212" },
   { name: "Gabriel", apartment: "312" },
   { name: "Chediak", apartment: "3224" },
-  { name: "Teste", apartment: "232" },
-  { name: "Teste", apartment: "232" },
-  { name: "Teste", apartment: "232" },
-  { name: "Teste", apartment: "232" },
-  { name: "Teste", apartment: "232" },
+  { name: "Edgar clone", apartment: "232" },
+  { name: "Matheus", apartment: "232" },
+  { name: "Ronaldo", apartment: "232" },
+  { name: "Fdc", apartment: "232" },
+  { name: "Krl é um teste", apartment: "232" },
 ];
 
 export default function Resident() {
@@ -58,9 +60,8 @@ export default function Resident() {
                   <Tr>
                     <Th>Nome</Th>
                     <Th>Apartamento</Th>
-                    <Th isNumeric>multiply by</Th>
-                    <Th isNumeric>multiply by</Th>
-                    <Th isNumeric>multiply by</Th>
+                    <Th>multiply by</Th>
+                    <Th>multiply by</Th>
                   </Tr>
                 </Thead>
                 {/*cabeça*/}
@@ -68,24 +69,38 @@ export default function Resident() {
                 {/*corpo*/}
                 <Tbody>
                   {residents.map((resident) => (
-                    <Tr>
+                    <Tr
+                      as={motion.tr}
+                      whileHover={{
+                        backgroundColor: "#111111",
+                        color: "#fafafa",
+                        cursor: "pointer",
+                      }}
+                      transition="ease-in-out"
+                    >
                       <Td>{resident.name}</Td>
                       <Td>{resident.apartment}</Td>
+                      <Td>{resident.name}</Td>
+                      <Td>{resident.name}</Td>
                     </Tr>
                   ))}
                 </Tbody>
                 {/*corpo*/}
-                <Tfoot>
-                  <Tr>
-                    <Th>Nome</Th>
-                    <Th>Apartamento</Th>
-                    <Th isNumeric>multiply by</Th>
-                    <Th isNumeric>multiply by</Th>
-                    <Th isNumeric>multiply by</Th>
-                  </Tr>
-                </Tfoot>
               </Table>
             </TableContainer>
+          </CardDash>
+          <CardDash>
+            <ReactPaginate
+              containerClassName={"pagination"}
+              activeClassName={"active"}
+              nextLabel={"next"}
+              breakLabel={"..."}
+              breakClassName={"break-me"}
+              onPageChange={() => console.log("teste")}
+              pageRangeDisplayed={5}
+              pageCount={100}
+              previousLabel="< previous"
+            />
           </CardDash>
         </Stack>
       </Layout>
