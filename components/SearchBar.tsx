@@ -16,6 +16,7 @@ export default function SearchBar() {
       <InputGroup bg="white">
         <InputLeftElement
           pointerEvents="none"
+          // eslint-disable-next-line react/no-children-prop
           children={<FiSearch color="gray.300" />}
         />
         <Input borderRadius={"20px"} type="tel" placeholder="Procurar..." />
