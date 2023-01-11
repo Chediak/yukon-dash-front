@@ -37,6 +37,8 @@ import { MdSchedule } from "react-icons/md";
 import { CgReorder } from "react-icons/cg";
 import { VscChecklist, VscArchive } from "react-icons/vsc";
 
+import Searchbar from '../components/SearchBar';
+
 import { Image } from "@chakra-ui/react";
 import Link from "next/link";
 import { URL, Url } from "url";
@@ -115,6 +117,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
             src="https://cdn.discordapp.com/attachments/715350234762313843/1062342690295009340/yukonlogoy.png"
             alt="Dan Abramov"
           />
+          <Searchbar></Searchbar>
         </Box>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>

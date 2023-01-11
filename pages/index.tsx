@@ -14,6 +14,8 @@ import {
 import Layout from "../components/layouts/Layout";
 import BreadCrumb from "../components/BreadCrumb";
 import CardDash from "../components/CardDash";
+import Searchbar from '../components/SearchBar';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +28,7 @@ export default function Home() {
   return (
     <>
       <Sidebar>
+        {/* <Searchbar></Searchbar> */}
         <Layout>
           <Stack>
             {/*breadcrumb*/}

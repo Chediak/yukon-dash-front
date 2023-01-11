@@ -18,18 +18,18 @@ export default function SearchBar() {
           pointerEvents="none"
           children={<FiSearch color="gray.300" />}
         />
-        <Input type="tel" placeholder="Procurar residente" />
+        <Input borderRadius={"20px"} type="tel" placeholder="Procurar..." />
       </InputGroup>
 
-      <Select placeholder="Recentes" w="300px">
+      {/* <Select placeholder="Recentes" w="300px">
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>
-      </Select>
+      </Select> */}
 
-      <Button colorScheme={"blue"}>Aplicar</Button>
+      {/* <Button colorScheme={"blue"}>Aplicar</Button> */}
 
-      <AddResidentBtn />
+      {/* <AddResidentBtn /> */}
     </Stack>
   );
 }

@@ -5,6 +5,7 @@ export default function CardDash({ children, justifyContent = "center" }: any) {
     <Flex
       p={2}
       rounded="md"
+      borderRadius={"20px"}
       border="1px solid #fafafa"
       bg={useColorModeValue("gray.100", "gray.900")}
       justifyContent={justifyContent}
