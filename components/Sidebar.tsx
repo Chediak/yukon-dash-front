@@ -115,7 +115,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
         <Box boxSize="">
           <Image
             src="https://cdn.discordapp.com/attachments/715350234762313843/1062342690295009340/yukonlogoy.png"
-            alt="Dan Abramov"
+            alt="Yukon Cybernetics"
           />
           <Searchbar></Searchbar>
         </Box>
