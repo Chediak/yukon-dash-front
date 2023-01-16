@@ -8,7 +8,7 @@ import {
   Icon,
   useColorModeValue,
   Drawer,
-  DrawerContent,  	
+  DrawerContent,
   Text,
   useDisclosure,
   BoxProps,
@@ -37,7 +37,7 @@ import { MdSchedule } from "react-icons/md";
 import { CgReorder } from "react-icons/cg";
 import { VscChecklist, VscArchive } from "react-icons/vsc";
 
-import Searchbar from '../components/SearchBar';
+import Searchbar from "../components/SearchBar";
 
 import { Image } from "@chakra-ui/react";
 import Link from "next/link";
@@ -117,10 +117,10 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
             src="https://cdn.discordapp.com/attachments/715350234762313843/1062342690295009340/yukonlogoy.png"
             alt="Yukon Cybernetics"
           />
-          <Searchbar></Searchbar>
         </Box>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
+      <Searchbar />
       {LinkItems.map((link) => (
         <NavItem
           fontSize="11px"

@@ -12,8 +12,8 @@ import AddResidentBtn from "./buttons/AddResidentBtn";
 
 export default function SearchBar() {
   return (
-    <Stack direction="row" position={'relative'}>
-      <InputGroup bg="white">
+    <>
+      <InputGroup w="90%" mx="auto" bg="white" mb={2}>
         <InputLeftElement
           pointerEvents="none"
           // eslint-disable-next-line react/no-children-prop
@@ -31,6 +31,6 @@ export default function SearchBar() {
       {/* <Button colorScheme={"blue"}>Aplicar</Button> */}
 
       {/* <AddResidentBtn /> */}
-    </Stack>
+    </>
   );
 }
