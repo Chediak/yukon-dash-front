@@ -12,7 +12,7 @@ import AddResidentBtn from "./buttons/AddResidentBtn";
 
 export default function SearchBar() {
   return (
-    <Stack direction="row">
+    <Stack direction="row" position={'relative'}>
       <InputGroup bg="white">
         <InputLeftElement
           pointerEvents="none"
