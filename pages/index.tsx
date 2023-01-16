@@ -27,7 +27,8 @@ const links = [
 export default function Home() {
   return (
     <>
-      <Sidebar>
+    
+      <Sidebar >
         {/* <Searchbar></Searchbar> */}
         <Layout>
           <Stack>
