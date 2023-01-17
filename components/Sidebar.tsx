@@ -57,7 +57,7 @@ const LinkItems: Array<LinkItemProps> = [
   { name: "Demonstrações Financeiras", icon: RiBubbleChartFill },
   { name: "Moradores", icon: HiBuildingOffice2, href: "/resident" },
   { name: "Estoque", icon: VscArchive },
-  { name: "Funcionários", icon: GrUserWorker },
+  { name: "Funcionários", icon: GrUserWorker, href: "/employees" },
   { name: "Reservas", icon: MdSchedule },
   { name: "Ordens de Serviço", icon: CgReorder },
   { name: "Solicitações", icon: VscChecklist },
