@@ -7,7 +7,7 @@ export default function CardDash({ children, justifyContent = "center" }: any) {
       py={4}
       borderRadius={"20px"}
       border="1px solid #fafafa"
-      bg={useColorModeValue("gray.100", "gray.900")}
+      bg={useColorModeValue("gray.50", "gray.50")}
       justifyContent={justifyContent}
     >
       {children}

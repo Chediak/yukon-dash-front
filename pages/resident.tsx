@@ -100,7 +100,7 @@ export default function Resident() {
                       whileHover={{
                         backgroundColor: "#111111",
                         color: "#fafafa",
-                        cursor: "pointer"
+                        cursor: "block",
                       }}
                       transition="ease-in-out"
                     >
