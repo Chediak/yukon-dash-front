@@ -54,7 +54,7 @@ import {
             {/*breadcrumb*/}
   
             <CardDash justifyContent="start">
-              <Text fontSize="xl">Residentes</Text>
+              <Text fontSize="xl">Funcionários</Text>
             </CardDash>
   
             <CardDash justifyContent="start">
@@ -65,7 +65,9 @@ import {
                 <Box>
                   <Select placeholder="Filtrar por" bg="white">
                     <option value="option1">Nome</option>
-                    <option value="option2">Apartamento</option>
+                    <option value="option2">CPF</option>
+                    <option value="option1">Salário</option>
+                    <option value="option1">Carga Horária</option>
                   </Select>
                 </Box>
                 <Box>
@@ -84,9 +86,9 @@ import {
                   <Thead>
                     <Tr>
                       <Th>Nome</Th>
-                      <Th>Apartamento</Th>
-                      <Th>multiply by</Th>
-                      <Th>multiply by</Th>
+                      <Th>CPF</Th>
+                      <Th>Salário</Th>
+                      <Th>Carga Horária</Th>
                     </Tr>
                   </Thead>
                   {/*cabeça*/}
@@ -104,7 +106,7 @@ import {
                         }}
                         transition="ease-in-out"
                       >
-                        <Td>{employees.cpf}</Td>
+                        <Td>{employees.nome}</Td>
                         <Td>{employees.cpf}</Td>
                         <Td>{employees.cpf}</Td>
                         <Td>{employees.cpf}</Td>
