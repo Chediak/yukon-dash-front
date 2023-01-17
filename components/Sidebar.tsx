@@ -54,7 +54,7 @@ const LinkItems: Array<LinkItemProps> = [
   { name: "Boletos", icon: FaRegMoneyBillAlt },
   { name: "Comunicados", icon: TfiAnnouncement },
   { name: "Contatos", icon: TiContacts },
-  { name: "Demonstrações Financeiras", icon: RiBubbleChartFill },
+  { name: "Demonstrações Financeiras", icon: RiBubbleChartFill, href: "/financialdemo" },
   { name: "Moradores", icon: HiBuildingOffice2, href: "/resident" },
   { name: "Estoque", icon: VscArchive },
   { name: "Funcionários", icon: GrUserWorker, href: "/employees" },
