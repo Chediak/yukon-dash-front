@@ -34,14 +34,11 @@ import {
   ];
   
   const employees = [
-    { name: "Edgar Santiago", cpf: "12342432" },
-    { name: "Anderson Pereira", cpf: "31242424" },
-    { name: "Mattheus Chediak", cpf: "3224242424" },
-    { name: "Larissa Anklam", cpf: "232424242" },
-    { name: "Ronaldo Vieira", cpf: "532434344" },
-    { name: "Sarah Augusto", cpf: "235765752" },
-    { name: "Carlos Tavares", cpf: "32575675" },
-    { name: "Paulo Ruas", cpf: "634534734" },
+    { name: "Edvaldo Siqueira", cpf: "12342432", salario: "1500,00", carga: "40" },
+    { name: "Alex Alves", cpf: "31242424", salario: "1500,00", carga: "40" },
+    { name: "Allison Da Graça", cpf: "3224242424", salario: "1500,00", carga: "40" },
+    { name: "Walmir Santos", cpf: "232424242", salario: "1500,00", carga: "40" },
+
   ];
   
   export default function Employee() {
@@ -88,28 +85,28 @@ import {
                       <Th>Nome</Th>
                       <Th>CPF</Th>
                       <Th>Salário</Th>
-                      <Th>Carga Horária</Th>
+                      <Th>Carga Horária (Horas)</Th>
                     </Tr>
                   </Thead>
                   {/*cabeça*/}
   
                   {/*corpo*/}
                   <Tbody>
-                    {employees.map((employes) => (
+                    {employees.map((employees) => (
                       // eslint-disable-next-line react/jsx-key
                       <Tr
                         as={motion.tr}
                         whileHover={{
                           backgroundColor: "#111111",
-                          color: "#fafafa",
+                          color: "#7DFDFE",
                           cursor: "block",
                         }}
                         transition="ease-in-out"
                       >
-                        <Td>{employees.nome}</Td>
+                        <Td>{employees.name}</Td>
                         <Td>{employees.cpf}</Td>
-                        <Td>{employees.cpf}</Td>
-                        <Td>{employees.cpf}</Td>
+                        <Td>{employees.salario}</Td>
+                        <Td>{employees.carga}</Td>
                       </Tr>
                     ))}
                   </Tbody>

@@ -34,7 +34,7 @@ export default function SearchBar() {
           children={
             <IconButton
               aria-label="Search"
-              icon={<FiSearch color="gray.300" />}
+              icon={<FiSearch color="gray.100" />}
               border="1px solid #1111112e"
             />
           }

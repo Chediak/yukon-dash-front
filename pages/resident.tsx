@@ -99,7 +99,7 @@ export default function Resident() {
                       as={motion.tr}
                       whileHover={{
                         backgroundColor: "#111111",
-                        color: "#fafafa",
+                        color: "#7DFDFE",
                         cursor: "block",
                       }}
                       transition="ease-in-out"
