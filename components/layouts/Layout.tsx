@@ -7,7 +7,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <Box p={5} rounded="md" bg={useColorModeValue("white", "gray.900")}>
+    <Box p={5} rounded="20px" bg={useColorModeValue("white", "gray.900")}>
       {children}
     </Box>
   );

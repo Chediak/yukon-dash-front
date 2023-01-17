@@ -1,5 +1,12 @@
 import {
   Box,
+  Button,
+  Menu,
+  MenuButton,
+  MenuItemOption,
+  MenuList,
+  MenuOptionGroup,
+  Select,
   Stack,
   Table,
   TableCaption,
@@ -10,6 +17,7 @@ import {
   Tfoot,
   Th,
   Thead,
+  Tooltip,
   Tr,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
@@ -50,7 +58,17 @@ export default function Resident() {
           </CardDash>
 
           <CardDash justifyContent="start">
-            <SearchBar />
+            <Stack direction={"row"}>
+              <Box>
+                <SearchBar />
+              </Box>
+              <Box>
+                <Select placeholder="Filtrar por" bg="white">
+                  <option value="option1">Ascendente</option>
+                  <option value="option2">Descendente</option>
+                </Select>
+              </Box>
+            </Stack>
           </CardDash>
           <CardDash justifyContent="space-between">
             <TableContainer w="100%">

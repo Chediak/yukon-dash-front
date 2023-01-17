@@ -120,17 +120,21 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
         </Box>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
-      <Searchbar />
-      {LinkItems.map((link) => (
-        <NavItem
-          fontSize="11px"
-          key={link.name}
-          icon={link.icon}
-          href={link.href}
-        >
-          {link.name}
-        </NavItem>
-      ))}
+      <Box px={4}>
+        <Searchbar />
+      </Box>
+      <Box mt={2}>
+        {LinkItems.map((link) => (
+          <NavItem
+            fontSize="11px"
+            key={link.name}
+            icon={link.icon}
+            href={link.href}
+          >
+            {link.name}
+          </NavItem>
+        ))}
+      </Box>
     </Box>
   );
 };
