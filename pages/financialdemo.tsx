@@ -128,7 +128,29 @@ export default function financialdemo() {
                     series={series}
                   />
                 </Box>
+                <Box>
+                <Box
+                  p={["6", "8"]}
+                  bg="transparent"
+                  borderRadius={8}
+                  pb="4"
+                  alignItems={"flex-end"}
+                >
+                  <Text fontSize="lg" mb="4">
+                    Gastos Semanais
+                  </Text>
+                  <Chart
+                    type="area"
+                    width="100%"
+                    height="160"
+                    options={options}
+                    series={series}
+                  />
+                  
+                </Box>
+                </Box>
               </SimpleGrid>
+              
             </Stack>
           </CardDash>
         </Box>

@@ -52,7 +52,7 @@ const LinkItems: Array<LinkItemProps> = [
   { name: "Agendas", icon: TfiAgenda },
   { name: "Assembleias", icon: SiGooglemeet },
   { name: "Boletos", icon: FaRegMoneyBillAlt },
-  { name: "Comunicados", icon: TfiAnnouncement },
+  { name: "Comunicados", icon: TfiAnnouncement, href: "/announcements" },
   { name: "Contatos", icon: TiContacts },
   { name: "Demonstrações Financeiras", icon: RiBubbleChartFill, href: "/financialdemo" },
   { name: "Moradores", icon: HiBuildingOffice2, href: "/resident" },
