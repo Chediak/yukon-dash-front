@@ -34,14 +34,14 @@ const links = [
 ];
 
 const residents = [
-  { name: "Edgar", apartment: "212" },
-  { name: "Gabriel", apartment: "312" },
-  { name: "Chediak", apartment: "3224" },
-  { name: "Edgar clone", apartment: "232" },
-  { name: "Matheus", apartment: "232" },
-  { name: "Ronaldo", apartment: "232" },
-  { name: "Fdc", apartment: "232" },
-  { name: "Krl é um teste", apartment: "232" },
+  { name: "Edgar Santiago", apartment: "132" },
+  { name: "Anderson Pereira", apartment: "312" },
+  { name: "Mattheus Chediak", apartment: "3224" },
+  { name: "Larissa Anklam", apartment: "232" },
+  { name: "Ronaldo Vieira", apartment: "534" },
+  { name: "Sarah Augusto", apartment: "232" },
+  { name: "Carlos Tavares", apartment: "325" },
+  { name: "Paulo Ruas", apartment: "634" },
 ];
 
 export default function Resident() {
@@ -64,6 +64,12 @@ export default function Resident() {
               </Box>
               <Box>
                 <Select placeholder="Filtrar por" bg="white">
+                  <option value="option1">Nome</option>
+                  <option value="option2">Apartamento</option>
+                </Select>
+              </Box>
+              <Box>
+                <Select placeholder="Tipo" bg="white">
                   <option value="option1">Ascendente</option>
                   <option value="option2">Descendente</option>
                 </Select>
@@ -88,12 +94,13 @@ export default function Resident() {
                 {/*corpo*/}
                 <Tbody>
                   {residents.map((resident) => (
+                    // eslint-disable-next-line react/jsx-key
                     <Tr
                       as={motion.tr}
                       whileHover={{
                         backgroundColor: "#111111",
                         color: "#fafafa",
-                        cursor: "pointer",
+                        cursor: "pointer"
                       }}
                       transition="ease-in-out"
                     >

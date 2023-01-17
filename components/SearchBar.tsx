@@ -28,6 +28,7 @@ export default function SearchBar() {
           placeholder="Procurar..."
         />
         <InputRightElement
+          position={"relative"} 
           children={
             <IconButton
               aria-label="Search"

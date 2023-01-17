@@ -18,6 +18,7 @@ export default function BreadCrumb({ items }: { items: BreadItemProps[] }) {
     {
       items ? setBreads(items) : console.log("error");
     }
+    
   }, []);
   return (
     <Breadcrumb alignContent={"center"}>
