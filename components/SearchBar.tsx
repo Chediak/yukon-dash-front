@@ -29,7 +29,7 @@ export default function SearchBar() {
         />
         <InputRightElement
           position={"relative"} 
-          mx={"15px"}
+          mx={"5px"}
           // eslint-disable-next-line react/no-children-prop
           children={
             <IconButton
