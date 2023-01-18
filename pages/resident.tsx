@@ -34,14 +34,54 @@ const links = [
 ];
 
 const residents = [
-  { name: "Edgar Santiago", apartment: "132" },
-  { name: "Anderson Pereira", apartment: "312" },
-  { name: "Mattheus Chediak", apartment: "3224" },
-  { name: "Larissa Anklam", apartment: "232" },
-  { name: "Ronaldo Vieira", apartment: "534" },
-  { name: "Sarah Augusto", apartment: "232" },
-  { name: "Carlos Tavares", apartment: "325" },
-  { name: "Paulo Ruas", apartment: "634" },
+  {
+    name: "Edgar Santiago",
+    apartment: "132",
+    email: "email@email.com",
+    status: "",
+  },
+  {
+    name: "Anderson Pereira",
+    apartment: "312",
+    email: "email@email.com",
+    status: "",
+  },
+  {
+    name: "Mattheus Chediak",
+    apartment: "3224",
+    email: "email@email.com",
+    status: "",
+  },
+  {
+    name: "Larissa Anklam",
+    apartment: "232",
+    email: "email@email.com",
+    status: "",
+  },
+  {
+    name: "Ronaldo Vieira",
+    apartment: "534",
+    email: "email@email.com",
+    status: "",
+  },
+  {
+    name: "Sarah Augusto",
+    apartment: "232",
+    email: "email@email.com",
+    status: "",
+  },
+  {
+    name: "Carlos Tavares",
+    apartment: "325",
+    email: "email@email.com",
+    status: "",
+  },
+  {
+    name: "Paulo Ruas",
+    apartment: "634",
+    email: "email@email.com",
+    status: "",
+  },
 ];
 
 export default function Resident() {
@@ -54,7 +94,7 @@ export default function Resident() {
           {/*breadcrumb*/}
 
           <CardDash justifyContent="start">
-            <Text fontSize="xl">Residentes</Text>
+            <Text fontSize="xl">Moradores</Text>
           </CardDash>
 
           <CardDash justifyContent="start">
@@ -74,6 +114,15 @@ export default function Resident() {
                   <option value="option2">Descendente</option>
                 </Select>
               </Box>
+              <Box>
+                <Button colorScheme="blue">Adicionar</Button>
+              </Box>
+              <Box>
+                <Button colorScheme="red">Remover</Button>
+              </Box>
+              <Box>
+                <Button colorScheme="yellow">Editar</Button>
+              </Box>
             </Stack>
           </CardDash>
           <CardDash justifyContent="space-between">
@@ -85,8 +134,8 @@ export default function Resident() {
                   <Tr>
                     <Th>Nome</Th>
                     <Th>Apartamento</Th>
-                    <Th>multiply by</Th>
-                    <Th>multiply by</Th>
+                    <Th>Email</Th>
+                    <Th>Status</Th>
                   </Tr>
                 </Thead>
                 {/*cabeça*/}
@@ -99,15 +148,29 @@ export default function Resident() {
                       as={motion.tr}
                       whileHover={{
                         backgroundColor: "#111111",
-                        color: "#7DFDFE",
+                        color: "#fafafa",
                         cursor: "block",
                       }}
                       transition="ease-in-out"
                     >
                       <Td>{resident.name}</Td>
                       <Td>{resident.apartment}</Td>
-                      <Td>{resident.name}</Td>
-                      <Td>{resident.name}</Td>
+                      <Td>{resident.email}</Td>
+
+                      <Td>
+                        <Select
+                          placeholder="Select option"
+                          style={{ color: "black" }}
+                        >
+                          <option value="option1" style={{ color: "black" }}>
+                            Concluso
+                          </option>
+                          <option value="option2" style={{ color: "black" }}>
+                            Pendente
+                          </option>
+                        </Select>
+                        {resident.status}
+                      </Td>
                     </Tr>
                   ))}
                 </Tbody>

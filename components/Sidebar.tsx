@@ -51,7 +51,7 @@ interface LinkItemProps {
 const LinkItems: Array<LinkItemProps> = [
   { name: "Agendas", icon: TfiAgenda },
   { name: "Assembleias", icon: SiGooglemeet },
-  { name: "Boletos", icon: FaRegMoneyBillAlt },
+  { name: "Boletos", icon: FaRegMoneyBillAlt, href: "/bills" },
   { name: "Comunicados", icon: TfiAnnouncement, href: "/announcements" },
   { name: "Contatos", icon: TiContacts },
   { name: "Demonstrações Financeiras", icon: RiBubbleChartFill, href: "/financialdemo" },
@@ -155,7 +155,7 @@ const NavItem = ({ icon, href, children, ...rest }: NavItemProps) => {
         role="group"
         cursor="pointer"
         _hover={{
-          bg: "black",
+          bg: "#111111",
           color: "white",
         }}
         {...rest}
