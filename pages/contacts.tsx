@@ -27,7 +27,7 @@ import {
   import Layout from "../components/layouts/Layout";
   import SearchBar from "../components/SearchBar";
   import SimpleSidebar from "../components/Sidebar";
-  import Contacts from "../components/Contacts";
+//   import Contacts from "../components/Contacts";
 
   const links = [
     { title: "Início", link: "/contacts" },
