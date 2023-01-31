@@ -59,6 +59,14 @@ export default function Home() {
                 <Text my="auto">Comunicados</Text>
               </CardDash>
             </SimpleGrid>
+            <SimpleGrid h="150px" columns={[1, 2]} gap={2}>
+              <CardDash>
+                <Text my="auto">Moradores</Text>
+              </CardDash>
+              <CardDash>
+                <Text my="auto">Comunicados</Text>
+              </CardDash>
+            </SimpleGrid>
           </Stack>
         </Layout>
       </Sidebar>
