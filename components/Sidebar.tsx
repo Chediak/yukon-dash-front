@@ -59,7 +59,7 @@ const LinkItems: Array<LinkItemProps> = [
   { name: "Estoque", icon: VscArchive },
   { name: "Funcionários", icon: GrUserWorker, href: "/employees" },
   { name: "Reservas", icon: MdSchedule },
-  { name: "Ordens de Serviço", icon: CgReorder },
+  { name: "Ordens de Serviço", icon: CgReorder, href: "/services" },
   { name: "Solicitações", icon: VscChecklist },
 ];
 
