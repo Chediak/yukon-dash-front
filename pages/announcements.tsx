@@ -42,6 +42,7 @@ import Layout from "../components/layouts/Layout";
 import SearchBar from "../components/SearchBar";
 import SimpleSidebar from "../components/Sidebar";
 import Blog from "../components/Blog";
+import People from "../components/People";
 
 const links = [
   { title: "Início", link: "/announcements" },
@@ -54,7 +55,7 @@ export default function announcements() {
       <Layout>
         <BreadCrumb items={links} />
         <Box>
-          <Blog />
+          <People />
         </Box>
       </Layout>
     </SimpleSidebar>

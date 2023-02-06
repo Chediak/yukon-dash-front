@@ -30,10 +30,10 @@ const PackageTier = ({
   checked = false,
 }: PackageTierProps) => {
   const colorTextLight = checked ? "white" : "white.600";
-  const bgColorLight = checked ? "blue.400" : "blue.300";
+  const bgColorLight = checked ? "#7DFDFE" : "#7DFDFE";
 
   const colorTextDark = checked ? "white" : "white.500";
-  const bgColorDark = checked ? "blue.400" : "blue.300";
+  const bgColorDark = checked ? "#7DFDFE" : "#7DFDFE";
 
   return (
     <Stack
@@ -53,7 +53,7 @@ const PackageTier = ({
       <List spacing={3} textAlign="start">
         {options.map((desc, id) => (
           <ListItem key={desc.id}>
-            <ListIcon as={FaCheckCircle} color="blue.400" />
+            <ListIcon as={FaCheckCircle} color="#7DFDFE" />
             {desc.desc}
           </ListItem>
         ))}
@@ -95,7 +95,7 @@ const ThreeTierPricingHorizontal = () => {
             textAlign={"center"}
           >
             <Heading size={"lg"}>
-              Ordens de Serviço <Text color="blue.400">Condomínio</Text>
+              Ordens de Serviço <Text color="#7DFDFE">Condomínio</Text>
             </Heading>
           </Stack>
           <Stack

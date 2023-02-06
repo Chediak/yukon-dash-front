@@ -20,14 +20,14 @@ const testimonials = [
   },
   {
     name: "Gabriel Fadel.",
-    role: "Motorista",
+    role: "Empresário",
     content:
       "O eventual descumprimento das regras deverá ser reprimido pelo síndico, que conforme previsão dos incisos IV e VII do artigo 1.348 do Código Civil e das alíneas 1º do artigo 22 da Lei nº 4.591/1964, poderá aplicar e cobrar multas.",
     avatar:
       "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
   },
   {
-    name: "Edgar Santigago.",
+    name: "Marina Silva.",
     role: "Engenheiro",
     content:
       "Prezado(a) Senhor, na qualidade de proprietário da moradia (ou apartamento) nº (informar), deste condomínio, vem à presença de Vossa Senhoria informar que condôminos têm incorrido em irregularidades neste condomínio, causando transtorno aos demais, pois frequentemente.",
@@ -151,7 +151,7 @@ export default function GridBlurredBackdrop() {
           textTransform={"uppercase"}
           color={"black.400"}
         >
-          Contatos
+          Comunicados & Reclamações 
         </chakra.h3>
       </Box>
       <SimpleGrid
