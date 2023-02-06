@@ -98,7 +98,7 @@ export default function financialdemo() {
         opacityTo: 0.3,
       },
     },
-  };  
+  };
 
   const series = [{ name: "series1", data: [101, 120, 10, 208, 154, 204] }];
 
@@ -110,7 +110,6 @@ export default function financialdemo() {
             <Stack direction={"row"}>
               <SimpleGrid columns={2} spacing={5}>
                 <Box
-
                   p={["6", "8"]}
                   bg="transparent"
                   borderRadius={8}
@@ -134,11 +133,10 @@ export default function financialdemo() {
                     bg="transparent"
                     borderRadius={8}
                     pb="4"
-                    
                     alignItems={"flex-end"}
                   >
                     <Text fontSize="lg" mb="4">
-                      Gastos Semanais
+                      Porcentagem Moradores
                     </Text>
                     <Chart
                       type="area"
@@ -158,7 +156,7 @@ export default function financialdemo() {
                     alignItems={"flex-end"}
                   >
                     <Text fontSize="lg" mb="4">
-                      Gastos Semanais
+                      Visão geral de vendas
                     </Text>
                     <Chart
                       type="area"
@@ -166,6 +164,7 @@ export default function financialdemo() {
                       height="160"
                       options={options}
                       series={series}
+                      
                     />
                   </Box>
                 </Box>
@@ -178,7 +177,7 @@ export default function financialdemo() {
                     alignItems={"flex-end"}
                   >
                     <Text fontSize="lg" mb="4">
-                      Gastos Semanais
+                      Taxa de Satisfação
                     </Text>
                     <Chart
                       type="area"
