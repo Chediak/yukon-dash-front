@@ -98,7 +98,7 @@ export default function financialdemo() {
         opacityTo: 0.3,
       },
     },
-  };
+  };  
 
   const series = [{ name: "series1", data: [101, 120, 10, 208, 154, 204] }];
 
@@ -108,13 +108,13 @@ export default function financialdemo() {
         <Box>
           <CardDash>
             <Stack direction={"row"}>
-              <SimpleGrid columns={2}>
+              <SimpleGrid columns={2} spacing={5}>
                 <Box
+
                   p={["6", "8"]}
                   bg="transparent"
                   borderRadius={8}
                   pb="4"
-                  // padding={"30%"}
                   alignItems={"flex-end"}
                 >
                   <Text fontSize="lg" mb="4">
@@ -134,6 +134,7 @@ export default function financialdemo() {
                     bg="transparent"
                     borderRadius={8}
                     pb="4"
+                    
                     alignItems={"flex-end"}
                   >
                     <Text fontSize="lg" mb="4">
