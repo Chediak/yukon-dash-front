@@ -27,7 +27,7 @@ import {
   import Layout from "../components/layouts/Layout";
   import SearchBar from "../components/SearchBar";
   import SimpleSidebar from "../components/Sidebar";
-//   import Contacts from "../components/Contacts";
+  import People from "../components/People";
 
   const links = [
     { title: "Início", link: "/contacts" },
@@ -42,14 +42,13 @@ import {
             {/*breadcrumb*/}
             <BreadCrumb items={links} />
             {/*breadcrumb*/}
-            <CardDash>Boleto</CardDash>
-            <CardDash>Boleto</CardDash>
-            <CardDash>Boleto</CardDash>
-            <CardDash>Boleto</CardDash>
-            <CardDash>Boleto</CardDash>
+            <Box>
+              <People />
+            </Box>
           </Stack>
         </Layout>
       </SimpleSidebar>
     );
   }
   
+

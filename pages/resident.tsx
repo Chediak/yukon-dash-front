@@ -159,7 +159,7 @@ export default function Resident() {
 
                       <Td>
                         <Select
-                          placeholder="Select option"
+                          placeholder="Selecione"
                           style={{ color: "black" }}
                         >
                           <option value="option1" style={{ color: "black" }}>
